@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>JavaScript 05</title>
+    <script type="text/javascript" src="global.js"></script>
+  </head>
+  <body>
+    <p>Check the log for output.</p>
+    
+    
+
+    <h2>What happens when you try to parse the integer out of a string like "Error 404"? How about "404 Error"? Other combinations of numbers and letters? What needs to be true about the incoming string for it to be parsed correctly?</h2>
+    <p>If you try to parse a string, you get a NaN result, which stands for Not a Number.  The code still runs but does not return a useful result.</p>
+    <p>If the string starts with an integer, then it takes out that integer from the rest of the string and drops the rest of the string.</p>
+    <p>If an integer is inside a string, but it starts with a character, it treats it as NaN.</p>
+    <h2>What happens if one (or more) of the inputs are non-numeric text (like a comma or a dollar-sign)? What errors occur, if any? What does the console output tell you?</h2>
+    <p>Dollar signs are not recognized.  But if you use a comma and all that precedes it is an integer, then it takes the integer before it.  This could be bad if a user inputs 1,000 for 1000.</p>
+    <h2>Why might you use the increment (++) or decrement (--) operators? What are some applications that you predict might come into play?</h2>
+    <p>The increment and decrement operators are useful to accomplish in one line of code what used to take two.  For example, you can add something while you're operating on something else.  It's also useful in loops.</p>
+    <h2>What questions do you have?</h2>
+    <p>None so far.</p>
+    
+    
+    
+  </body>
+</html>
