@@ -1,0 +1,35 @@
+<!doctype HTML>
+<html>
+  <head>
+    <title>JS Atomic 04</title>
+    <script type="text/javascript" src="global.js"></script>
+  </head>
+  <body>
+    
+
+<h2> What is the data-type (e.g. string or integer) of the information that comes in? What happens if the user inputs a number -- does it stay an integer? Use typeof and console.log() to help with this.</h2>
+<p>I am pretty sure it stays a string.  And it does.  There is no way for most programming languages to know whether to convert the data or not.</p>
+
+    <h2>What happens if the user clicks "OK" (or equivalent) without typing anything in? What information gets assigned to a variable, if any?</h2>
+    
+    <p>It is typed as a string, but it's value is nothing.  In essence, an empty string.  If they hit cancel, though, it returns null, the ruby equivalent of nil.</p>
+    
+    
+    <h2>How did you choose your variable names? If you gave a list of variable names to someone who hasn't seen your code, could they reasonably predict what information you might store in each?</h2>
+    <p>I hope they could.  I used names in English that describe what the variable contains.  An alien might not know that age should be an integer, but a human would.</p>
+    
+    
+    <h2>If you completely changed a question you were asking the user, would it make sense to totally rename the variable? What if you changed the order of your questions?</h2>
+    <p>Yes, I think it would make sense to change the variable name if you changed the question.  If I reordered the questions, I would also copy/paste the variable names associated with that question.  If you find yourself changing the questions a lot and then doing the same thing to them, I might start saving the questions as a variable too and storing them somewhere else, like a multi-dimensional array or hash of questions and answers.</p>
+    <h2>In these exercises, we use prompt() to collect information, but most websites do that ask for information do not use prompt() -- how do they collect information (what HTML elements do they use)? What might be an advantage to doing it that way instead of with prompt()? Are there any disadvantages? Why might you use prompt()?</h2>
+    <p>I think most websites use forms to collect information.  Advantages to prompt are that you get the user's attention right away and before any further code is run.  Disadvantages are the inconvenience of the user having to give information just to get the rest of the page.</p>
+    <h2>Research prompt() -- is there any way to make it so that there are two (or more) fields?</h2>
+    <p>I could not find out how to do this.  I could loop prompts but not to create multiple prompt fields in the same question.</p>
+    <h2>What questions do you have?</h2>
+    <p>Makes sense so far.</p>
+    
+    
+    
+    
+  </body>
+</html>
