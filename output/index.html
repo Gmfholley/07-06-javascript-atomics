@@ -1,0 +1,37 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 02</title>
+  <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 02</h1>
+
+  <h2>What's the difference between alert() and console.log()?</h2>
+  <p>Alert displays messages in a message box that halts the running of all other things until the user responds by hitting ok.</p>
+  <p>console.log works by placing messages in a browser console window, and the running of methods afterwards is not halted until the user responds.</p>
+
+  <h2>What's one situation where you might use an `alert()` to tell the user something?</h2>
+  <p>Alerts might be used to halt the execution of something or to require the user's attention before execution.  For example, before deleting something or heading to a vulnerable website.  Most of those scenarios sound like a confirm box rather than an alert box.</p>
+  
+  <p>Just alerts might be useful to display messages that a user might otherwise miss before the page loads.  For example, the goodbye message before clicking away from the site. </p>
+
+  <h2>What's one way that `alert()` might get obnoxious?</h2>
+  <p>No one likes to have to click things twice.  Alerts would definitely be obnoxious if they were the de facto mode of communication with a user on any site.</p>
+
+  <h2>Would it make sense to use console.log() to tell the user things? Why or why not?</h2>
+  <p>Definitely not.  I did not know that a browser console existed before today.  The user will not get the message.  The log is most useful if you, the developer, wants to verify that code is running the way you want to, or to log when an error occurs so you can debug.</p>
+  
+  
+  <h2>What's one way that console.log() might be a good tool for you to use?</h2>
+  <p>Debugging.</p>
+  
+  
+  <h2>When do the console.log() statements get run? Is it before the first alert() gets displayed? After it gets displayed but before the user clicks "OK" (or equivalent)? After the user clicks to close the dialog box? A different time? How did you find out for sure?</h2>
+  
+  <p>The javascript runs in order.  So until the user hits 'ok' at the first alert, the subsequent javascript is not run.  I verified this by looking at the log before I hit ok.</p>
+
+  <h2>What questions do you have?</h2>
+  <p>How do you get information from a user?  How does javascript affect the DOM?</p>
+</body>
+</html>
